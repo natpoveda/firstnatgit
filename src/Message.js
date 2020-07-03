@@ -1,8 +1,6 @@
 import React from "react";
+import Carita from "./Carita"
 
-const buttonStyle = {
-  margin: "10px"
-};
 
 export default class Message extends React.Component {
     constructor(props) {
@@ -14,7 +12,11 @@ export default class Message extends React.Component {
     return (
       <div>
          El contador se encuentra con un valor de {this.props.children[1]}
+         <Carita>
+           numero = {this.props.children[1]}
+         </Carita> 
       </div>
+
     );
   }
 }
