@@ -1,5 +1,5 @@
 import React from "react";
-
+import Message from "./Message"
 
 const buttonStyle = {
   margin: "10px"
@@ -44,7 +44,9 @@ export default class Counter extends React.Component {
         <span>
           count: {this.state.count}
         </span>
-           
+        <Message>
+            onMessage = {this.state.count}
+        </Message>    
       </div>
     );
   }
